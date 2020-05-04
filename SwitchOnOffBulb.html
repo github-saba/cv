@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <Title>Switch On and Off the Bulb</Title>
+  <style>
+    #button1 {
+      padding: 10px;
+      margin: 60px;
+      background-color: green;
+    }
+
+    #button2 {
+      padding: 10px;
+      margin: 60px;
+      background-color: red;
+    }
+
+    body{
+      background-color: powderblue;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <img src="images/bulboff.jpg" id="bulb" height="282" width="165" />
+    <p>
+      It is intresting whenever we work with some pictures and colours
+    </p>
+    <button id="button1" onclick="light(1)"><b>Switch On</b></button>
+    <button id="button2" onclick="light(0)"><b>Switch Off</b></button>
+  </center>
+  <script type="text/javascript">
+    function light(value) {
+      var picture;
+      if (value == 1) {
+        picture = "images/bulbon.jpg";
+      } else {
+        picture = "images/bulboff.jpg";
+      }
+      document.getElementById('bulb').src = picture;
+    }
+  </script>
+
+
+
+</body>
+
+</html>
