@@ -16,7 +16,7 @@
       background-color: red;
     }
 
-    body{
+    body {
       background-color: powderblue;
     }
   </style>
@@ -24,7 +24,7 @@
 
 <body>
   <center>
-    <img src="images/bulboff.jpg" id="bulb" height="282" width="165" />
+    <img src="images\bulboff.jpg" id="bulb" height="282" width="165" />
     <p>
       It is intresting whenever we work with some pictures and colours
     </p>
@@ -35,9 +35,9 @@
     function light(value) {
       var picture;
       if (value == 1) {
-        picture = "images/bulbon.jpg";
+        picture = "images\\bulbon.jpg";
       } else {
-        picture = "images/bulboff.jpg";
+        picture = "images\\bulboff.jpg";
       }
       document.getElementById('bulb').src = picture;
     }
